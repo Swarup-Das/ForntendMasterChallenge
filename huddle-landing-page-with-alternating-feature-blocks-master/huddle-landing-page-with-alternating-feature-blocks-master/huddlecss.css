@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.btn1{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+.container {
+    max-width: 100%;
+    width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex>div, .flex>ul{
+    flex: 1;
+}
+
+header{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(193, 100%, 96%);
+    padding: 20 0px
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.box{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    margin: 40px 0;
+    padding: 60px;
+    border-radius: 15px;
+}
+.center{
+    text-align: center;
+}
+
+.box-cen{
+    display: inline-block;
+    position: relative;
+    margin-bottom: -50%;
+    z-index: 1;
+}
+/* footer design */
+footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 180px 0 60px;
+    color: #fff;
+    font-size: 14px;
+}
+footer .container>img{
+    margin-bottom: 20px;
+}
+
+footer .footer-flex{
+    display: flex;
+    align-items: initial;
+}
+
+footer .footer-flex>ul{
+    flex: 1;
+
+}
+
+
+footer ul{
+    
+    list-style-type: none;
+    padding-right: 20px;
+
+}
+footer ul li{
+    margin-bottom: 20px;
+}
+
+.footer-align{
+    align-items: flex-start;
+}
+
+footer .contact{
+    display: grid;
+    grid-template-columns: 30px 250px;
+}
+
+footer .circle{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p{
+    text-align: right;
+}
+
+
+
+
