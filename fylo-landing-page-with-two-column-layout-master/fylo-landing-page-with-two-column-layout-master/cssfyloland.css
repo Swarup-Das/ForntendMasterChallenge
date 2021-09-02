@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+	color: hsl(243, 87%, 12%);
+}
+
+.container{
+	padding: 20px;
+	max-width: 100%;
+	width: 1440px;
+	margin: 0 auto;
+}
+img{
+	max-width: 100%;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex > div{
+	flex: 1;
+}
+h1, h2{
+	font-family: 'Raleway';
+	font-size: 1.8em;
+}
+/* Nav style */
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 30px 0;
+
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+nav ul li{
+	margin-left: 50px;
+}
+nav ul a{
+	color: hsl(243, 87%, 12%);
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* form style */
+
+form{
+	display: flex;
+}
+button{
+	border: 1px solid hsl(224, 93%, 58%);
+	background-color: hsl(224, 93%, 58%);
+	color: white;
+	flex: 0.3;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 15px;
+	margin-left: 10px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+button:hover{
+	background-color: hsl(212, 69%, 63%);
+	border-color: hsl(212, 69%, 63%);
+
+}
+input{
+	border: 1px solid hsl(243, 87%, 12%);
+	border-radius: 2px;
+	flex: 0.7;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 15px;
+}
+input::placeholder{
+	color: hsl(0, 0%, 75%);
+}
+
+/* part 2 style*/
+
+.part2{
+	background-color: hsl(240, 75%, 98%);
+	position: relative;
+	padding: 50px 0;
+	margin-top: 200px;
+}
+
+.part2::before{
+	content: '';
+	background-image: url('./images/bg-curve-desktop.svg');
+	background-size: cover;
+	background-position: 0 0;
+	position: absolute;
+	height: 60px;
+    width: 100%;
+	top: -60px;
+	left: 0;
+}
+.part2 a{
+	color: hsl(170, 45%, 43%);
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 1.5px solid hsl(170, 45%, 43%);
+}
+.part2 a img{
+	padding-left: 10px;
+	position: relative;
+	top: 2px;
+}
+
+/* testimonial box */
+
+.testimonial-box{
+	background-color: white;
+	padding: 25px;
+	margin-top: 40px;
+	box-shadow: rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	width: 70%;
+}
+.testimonial-box p{
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	line-height: 1.7;
+}
+
+.testimonial-box small{
+	font-size: 0.7em;
+	padding: 0%;
+	margin: 0%;
+	padding-left: 15px;
+}
+.testimonial-box h5{
+	color: hsl(243, 87%, 12%);
+	padding: 0;
+	margin: 0%;
+	padding-left: 15px;
+	padding-top: 7px;
+	font-family: 'Raleway',sans-serif;
+}
+.user-info{
+	display: flex;
+}
+.user-info img{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+
+/* part 3 */
+
+.part3{
+	background-color: hsl(238, 22%, 44%);
+	color: white;
+	padding: 50px;
+}
+.part3 form{
+	flex-direction: column;
+}
+.part3 form input{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	flex: 1;
+}
+.part3 form button{
+	width: 50%;
+	margin: 20px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+}
+
+/* footer style */
+
+footer{
+	background-color: hsl(243, 87%, 12%);
+	color: white;
+	padding: 50px;
+}
+footer .contact img{
+	margin-right: 10px;
+} 
+footer ul{
+	margin-right: 130px;
+}
+footer ul li{
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+footer ul a{
+	color: white;
+	text-decoration: none;
+}
+footer .social-media{
+	display: flex;
+	flex-direction: row;
+}
+footer .social-media li{
+	padding-right: 20px;
+}
+footer .flex{
+	align-items: flex-start;
+}
+ 
+
+@media screen and (max-width: 768px){
+	body{
+		text-align: center;
+	}
+	nav{
+		flex-direction: column;
+		margin: 10px 0;
+	}
+	nav ul li{
+		margin: 10px 20px;
+	}
+	.flex{
+		flex-direction: column;
+	}
+	.part2::before{
+		background-image: url(./images/bg-curve-mobile.svg);
+		height: 80px;
+	}
+	.flex > div{
+		width: 100%;
+	}
+	.flex > div:first-child{
+		margin-right: 0;
+	}
+	.flex > div:last-child{
+		margin-left: 0;
+	}
+	.testimonial-box{
+		width: 100%;
+	}
+	.part3 form input{
+		flex: 1;
+	}
+	.part3 form button{
+		margin: 20px 0;
+		width: 100%;
+	}
+	.part1-illustration{
+		margin-top: 30px;
+	}
+	.user-info{
+		justify-content: center;
+	}
+	footer ul{
+		padding: 0;
+		width: 100%;
+	}
+}
